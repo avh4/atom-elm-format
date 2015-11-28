@@ -1,21 +1,15 @@
-# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
 'context-menu':
-  'atom-text-editor': [
-    {
-      'label': 'Toggle elm-format'
-      'command': 'elm-format:toggle'
-    }
-  ]
+  '.overlayer':
+      'elm-format current buffer': 'elm:format'
+
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
       'label': 'elm-format'
       'submenu': [
-        {
-          'label': 'Toggle'
-          'command': 'elm-format:toggle'
-        }
+        { 'label': 'elm-format', 'command': 'elm:format' }
       ]
     ]
   }

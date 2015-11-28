@@ -1,18 +1,17 @@
 {
-  "name": "elm-format",
+  "name": "atom-elm-format",
   "main": "./lib/elm-format",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "Run elm-format on your Elm code",
   "keywords": [
+    "elm"
   ],
-  "activationCommands": {
-    "atom-workspace": "elm-format:toggle"
-  },
-  "repository": "https://github.com/atom/elm-format",
+  "repository": "https://github.com/avh4/atom-elm-format",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "temp": ">=0.6"
   }
 }
